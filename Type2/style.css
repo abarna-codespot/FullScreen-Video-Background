@@ -1,0 +1,58 @@
+body{
+	margin: 0;
+	padding: 0;
+	color: white;
+	overflow-x: hidden;
+	font-family: 'Tajawal',sans-serif;
+}
+.video-container video{
+	position: fixed;
+	right: -300px;
+	bottom: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	height: 100vh;
+}
+.video-container{
+	z-index: 1;
+}
+.text-content{
+	position: absolute;
+	z-index: 2;
+	bottom: 15px;
+	padding: 10px;
+	text-align: justify;
+}
+.text-content p{
+	font-size: 11px;
+}
+#play{	
+	font-size: 48px;
+}
+.fa-play-circle{
+	position: absolute;
+	color: rgba(255,255,255,0.8);
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+}
+@media only screen and (min-width:768px){
+	.video-container video{
+		width: 100vw;
+		height: auto;
+		right: 0;
+	}
+	
+	.text-content{
+		top: 30px;
+		right: 30px;
+		width: 30%;
+		
+		
+	}
+	.text-content p{
+		font-size: 15px;
+	}
+}
